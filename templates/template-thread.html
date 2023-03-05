@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Responsive email</title>
+        <style type="text/css">
+            body {margin: 10px 0; padding: 0 10px; background: #FAFAFA; font-size: 13px;}
+            table {border-collapse: collapse;}
+            td {font-family: arial, sans-serif; color: #333333;}
+
+            @media only screen and (max-width: 480px) {
+                body,table,td,p,a,li,blockquote {
+                    -webkit-text-size-adjust:none !important;
+                }
+                table {width: 100% !important;}
+
+                .responsive-image img {
+                    height: auto !important;
+                    max-width: 100% !important;
+                    width: 100% !important;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" align="center" width="640" bgcolor="#FFFFFF">
+                        <tr>
+                            <td bgcolor="#253946" style="font-size: 0; line-height: 0; padding: 0 10px;" height="140" align="center" class="responsive-image">
+                                <img src="http://www.ammitec.org/images/ammitec-logo.png" alt="logo" />
+                            </td>
+                        </tr>
+                        <tr><td style="font-size: 0; line-height: 0;" height="30">&nbsp;</td></tr>
+                        <tr>
+                            <td style="padding: 10px 10px 15px 10px;">
+                                <div style="font-size: 18px; color: #1F4B7D; font-weight: bold;">AMMITEC - New Forum Topic: {thread_name} in {channel_name}/{channel_parent_name}</div>
+                                <br />
+                                <div>{first_name} {last_name} posted a new conversation called {thread_name}</div>
+                            </td>
+                        </tr>
+  <!-- post body start -->
+                        <tr><td style="font-size: 0; line-height: 0;" height="1">&nbsp;</td></tr>
+                        <tr><td style="font-size: 0; line-height: 0;" height="30">&nbsp;</td></tr>
+                        <tr><td style="font-size: 12px; padding: 10px 10px 15px 10px;" height="1">{posts}</td></tr>
+
+                        <!-- post body end -->
+
+                        <!-- Join Conversation -->
+                        <tr><td style="font-size: 0; line-height: 0;" height="1">&nbsp;</td></tr>
+                        <tr><td style="font-size: 0; line-height: 0;" height="30">&nbsp;</td></tr>
+                        <tr><td style="padding-left:10px; font-size: 13px;" height="1"><a href="{thread_link}">click here to read more </a></td></tr>
+                        <!-- Join Conversation end -->
+
+                        <!-- unsubscribe start -->
+                        <!--tr><td style="padding-left:10px; font-size: 8px;" height="1" bgcolor="#F9F9F9"><span>This email was sent because you were subscribed to this thread. If you want to stop receiving emails from this thread <a href="{unsubscribe_link}">click here</a></span></td></tr>
+            <tr><td style="font-size: 0; line-height: 0;" height="1" bgcolor="#F9F9F9">&nbsp;</td></tr>
+            <tr><td style="font-size: 0; line-height: 0;" height="30">&nbsp;</td></tr-->
+                        <!-- unsubscribe end -->
+                        <tr><td style="font-size: 0; line-height: 0;" height="1">&nbsp;</td></tr>
+                        <tr><td style="font-size: 0; line-height: 0;" height="30">&nbsp;</td></tr>
+                        <tr>
+                            <td style="padding: 5px 10px 1px 10px;">
+                                <span>
+                                    AMMITEC, Promoting Seaworthy ICT
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px 10px 1px 10px;">
+                                <span>
+                                    Association of Maritime Managers for Information Technology and communications 
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px 10px 1px 10px;">
+                                <span>
+                                    Address: Akti Miaouli 93, PIRAEUS 185 38
+                                </span>
+                            </td>
+                        </tr>
+                        <!-- -->
+                        <tr><td style="font-size: 0; line-height: 0;" height="20">&nbsp;</td></tr>
+                        <tr>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr><td style="font-size: 0; line-height: 0;" height="15">&nbsp;</td></tr>
+                                    <tr>
+                                        <td style="padding: 0 10px; color: #253946;">
+                                            <a style="color:#253946; text-decoration:none;" href="http://www.ammitec.org">
+                                                <img style="margin-right:5px;" src="http://ammitec.org/forum/images/plugin_mail/website.png" height="16" width="16" />
+                                                <span>Visit our Website </span>
+                                            </a>
+
+                                        </td>
+                                        <td style="padding: 0 10px; color: #253946;">
+                                            <a style="color:#253946; text-decoration:none;" href="https://www.facebook.com/pages/AMMITEC/104411452938505">
+                                                <img style="margin-right:5px;" src="http://ammitec.org/forum/images/plugin_mail/fb.png" height="16" width="16" />
+                                                <span>Like us on Facebook</span>
+                                            </a>
+                                        </td>
+                                        <td style="padding: 0 10px; color: #253946;">
+                                            <a style="color:#253946; text-decoration:none;" href="mailto:info@ammitec.org">
+                                                <img style="margin-right:5px;" src="http://ammitec.org/forum/images/plugin_mail/email.png" height="16" width="16" />
+                                                <span>info@ammitec.org</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr><td style="font-size: 0; line-height: 0;" height="15">&nbsp;</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
