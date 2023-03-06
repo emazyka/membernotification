@@ -121,6 +121,12 @@ class MemberNotification_Api_Email extends vB_Api
 
 		$this->notificationMessage = $this->createNotificationTemplate();
 
+		// TODO: Remove in PROD - START
+		$users = array_filter($users, function ($user) {
+			return substr($user['email'], -13) == '@webandart.gr';
+		});
+		// TODO: Remove in PROD - END
+
 		$this->logTemplate();
 
 		$notifications = [];
